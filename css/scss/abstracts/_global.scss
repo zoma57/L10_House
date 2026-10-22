@@ -321,3 +321,21 @@ footer {
         transform: translateX(-52px);
     }
 }
+
+.loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ada996;
+    background: -webkit-linear-gradient(to right,#eaeaea,#dbdbdb,#f2f2f2,#ada996);
+    background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+    z-index: 300;
+    @include flex($jc: center, $ai: center);
+
+    .box {
+        width: 200px;
+        height: 200px;
+    }
+}
