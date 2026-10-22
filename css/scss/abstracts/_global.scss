@@ -1,0 +1,323 @@
+@use "./../abstracts/variables" as *;
+@use "./../abstracts/mixins" as *;
+
+body {
+    background: #8e9eab;
+    background: -webkit-linear-gradient(to right,#eef2f3,#8e9eab);
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+}
+
+p {
+    color: #555;
+}
+
+.firstColor {
+    color: $firstColor;
+}
+
+.secondColor {
+    color: $secondColor;
+}
+
+.title {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    
+    h2 {
+        font-size: 45px;
+        font-weight: 650;
+        color: $secondColor;
+    }
+
+    &::after {
+        @include createEle(30%, 3px);
+        background-color: $secondColor;
+        @include position($l : 50%, $b : -10px);
+        transform: translateX(-50%);
+        border-radius: 10px;
+        transition-duration: .5s;
+    }
+}
+
+.whiteTitle {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+
+    h2 {
+        font-size: 45px;
+        font-weight: 650;
+        color: white;
+    }
+
+    &::after {
+        @include createEle(30%, 3px);
+        background-color: white;
+        @include position($l : 50%, $b : -10px);
+        transform: translateX(-50%);
+        border-radius: 10px;
+        transition-duration: .5s;
+    }
+
+}
+
+section:not(#Language_Sectors) {
+    &:hover {
+        .title::after {
+            width: 80%;
+        }
+    }
+
+    &:hover {
+        .whiteTitle::after {
+            width: 80%;
+        }
+    }
+}
+
+#Language_Sectors {
+    .part1 {
+        &:hover {
+        .title::after {
+            width: 80%;
+        }
+    }
+
+    &:hover {
+        .whiteTitle::after {
+            width: 80%;
+        }
+    }
+    }
+
+    .part2 {
+        &:hover {
+            .title::after {
+                width: 80%;
+            }
+        }
+
+    &:hover {
+        .whiteTitle::after {
+            width: 80%;
+            }
+        }
+    }
+}
+
+.video {
+    background-image: url("../../../images/video-bg.jpg");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: radial-gradient(rgb(104, 183, 3), rgb(48, 93, 0));
+    }
+
+    .content {
+        position: relative;
+        text-align: center;
+        i {
+            font-size: 70px;
+            cursor: pointer;
+        }
+    }
+}
+
+.popup {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    @include position ($p : fixed, $t : 0, $l : 0, $z : 100);
+    background-color: rgba(0, 0, 0, .5);
+    overflow: auto;
+    @include distance(100%, 100%);
+    padding: 20px 0;
+
+    .box {
+        background-color: white;
+        width: 75%;
+        margin: 50px auto;
+        
+        .head {
+            position: relative;
+            border-bottom: 1px solid black;
+            
+            i {
+                @include position($t : 15px, $r : 15px);
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+
+        .body {
+            section {
+                ol {
+                    li {
+                        &::marker {
+                            color: $secondColor;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.popup:nth-of-type(2) {
+    justify-content: center;
+    align-items: center;
+
+    .box {
+        width: 700px;
+        height: 450px;
+        @include respond (350) {
+            width: 90%;
+            height: 200px;
+        }
+        @include respond (450) {
+            width: 90%;
+            height: 300px;
+        }
+        @include respond (650) {
+            width: 500px;
+            height: 350px;
+        }
+
+        iframe {
+            width: 700px;
+            height: 450px;
+            @include respond (350) {
+                width: 100%;
+                height: 100%;
+        }
+        }
+    }
+}
+
+.popup:nth-of-type(3) {
+    .body {
+        .item {
+            background-color: #ebfbee;
+            border-radius: 10px;
+            padding: 10px;
+            @include distance(100%, 100%);
+            
+            img {
+                @include distance(64px, 64px);
+                
+            }
+
+            p {
+                background-color: #dfeee2;
+                color: #000;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.popup:nth-of-type(4) {
+    overflow-x: hidden;
+    .box {
+        @include position($t: 0, $r: 0);
+        margin: auto;
+        border-radius: 10px 0px 0px 10px;
+        width: 40%;
+        transform: translateX(100%);
+        transition-duration: .5s;
+        @include respond (350) {
+            width: 75%;
+        }
+        @include respond (650) {
+            width: 60%;
+        }
+        @include respond (1050) {
+            width: 50%;
+        }
+
+        .xmark {
+            background-color: #000;
+            color: white;
+            width: 18px;
+            height: 18px;
+            font-size: 8px;
+            border-radius: 4px;
+            @include flex($jc: center, $ai: center)
+        }
+
+        >i {
+            @include position($t : 15px, $r : 15px);
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .section:nth-of-type(odd) {
+            h5 {
+                color: $firstColor;
+            }
+
+            i {
+                color: $firstColor;
+            }
+        }
+
+        .section:nth-of-type(even) {
+            h5 {
+                color: $secondColor;
+            }
+
+            i {
+                color: $secondColor;
+            }
+        }
+
+        &.show {
+            transform: translateX(0%);
+        }
+    }
+}
+
+footer {
+    background-color: #333;
+    
+    p {
+        color: white;
+    }
+}
+
+#Top {
+    background-color: $firstColor;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 50%;
+    right: -100px;
+    z-index: 100;
+    transition-duration: .5s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateX(-52px);
+    }
+}
