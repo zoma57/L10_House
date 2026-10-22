@@ -1,0 +1,72 @@
+@use "./../abstracts/variables" as *;
+@use "./../abstracts/global" as *;
+@use "./../abstracts/mixins" as *;
+@use "./../abstracts/keyframes" as *;
+
+#Why_Us {
+    .item {
+
+        background-color: $secondColor;
+        @include distance (350px , 450px);
+        margin: auto;
+        @include respond (350) {
+            @include distance (280px , 450px);
+        }
+        @include respond (650) {
+            @include distance (320px , 450px);
+        }
+        @include respond (850) {
+            @include distance (320px , 450px);
+        }
+        @include respond (1050) {
+            @include distance (95% , 450px);
+            
+        }
+
+        .box {
+            @include distance (100%, 100%);
+            background-image: url("../../../images/best.jpg");
+            background-position: center;
+            background-size: cover;
+            @include flex(flex-end, flex-start,column);
+            color: white;
+            position: relative;
+            transition-duration: .5s;
+            overflow: hidden;
+    
+            &::before {
+                @include createEle(100%, 100%);
+                background: linear-gradient(0deg, #1e2022 0%, transparent 75%);
+                @include position ($t : 0, $l : 0);
+            }
+    
+            
+    
+            .content {
+                position: relative;
+    
+                p {
+                    color: white;
+                }
+            }
+        }
+
+        .box2{
+            background-image: url("../../../images/solutions.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .box3{
+            background-image: url("../../../images/teamwork.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        &:hover {
+            .box {
+                transform: translate(-10px, 10px);
+            }
+        }
+    }
+}

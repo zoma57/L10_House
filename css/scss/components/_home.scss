@@ -1,0 +1,145 @@
+@use "./../abstracts/variables" as *;
+@use "./../abstracts/global" as *;
+@use "./../abstracts/mixins" as *;
+@use "./../abstracts/keyframes" as *;
+
+#Home {
+    height: 100vh;
+    position: relative;
+
+    .part1 {
+        @include flex(flex-start);
+
+        h1 {
+            color: $firstColor;
+            font-size: 65px;
+            font-weight: 500;
+            @include respond (350) {
+                font-size: 35px;
+            }
+
+            @include respond (850) {
+                font-size: 50px;
+            }
+        }
+
+        @include respond (350) {
+                transform: translateY(-20%);
+            }
+
+        @include respond (850) {
+                transform: translateY(0%);
+            }
+
+        .videoIcon {
+            
+            a {
+                color: $firstColor;
+                @include distance (40px, 40px);
+                border-radius: 50%;
+                @include flex();
+                @include position($p : relative);
+
+                &::before {
+                    @include createEle(0%, 0%);
+                    border-radius: 50%;
+                    background-color: $firstColor;
+                    @include position ($t : 50%, $l : 50%);
+                    transform: translate(-50%, -50%);
+                    transition-duration: .5s;
+                }
+
+                i {
+                    @include position ($t : 50%, $l : 50%);
+                    transform: translate(-50%, -50%);
+                    transition-duration: .5s;
+                }
+
+                &:hover {
+                    &::before {
+                        @include createEle(100%, 100%);
+                    }
+                    i {
+                        color: white
+                    }
+                }
+            }
+        }
+    }
+
+    .part2 {
+        @include flex();
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .item {
+
+            img {
+                @include respond (350) {
+                    transform: translate(10%, -110%);
+                    width: 80%;
+                }
+
+                @include respond (850) {
+                    transform: translate(0%, 0%);
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+
+    #HeadLine {
+        margin: 0;
+
+        .cd-headline {
+            text-align: left;
+            font-size: 20px;
+            color: $secondColor;
+            font-weight: 500;
+
+            &.clip {
+                .cd-words-wrapper {
+                    &::after {
+                        background-color: $secondColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .arrows {
+        @include position($b : 15%, $l : 50%, $z : 3);
+        transform: translateX(-50%);
+        
+        img:not(:first-child) {
+            @include position($l : 0, $t : 0);
+        }
+
+        img {
+            @include distance(25px, 25px);
+            
+
+            &:nth-of-type(1) {
+                animation: animate1 1s infinite;
+            }
+
+            &:nth-of-type(2) {
+                transform: translateY(20px);
+                animation: animate2 1s infinite;
+            }
+            &:nth-of-type(3) {
+                transform: translateY(40px);
+                animation: animate3 1s infinite;
+            }
+        }
+    }
+
+    >img {
+        @include position($b : 0, $l : 0);
+        width: 100%;
+        transform: rotateX(180deg);
+    }
+
+}

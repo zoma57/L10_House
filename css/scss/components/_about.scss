@@ -1,0 +1,11 @@
+@use "./../abstracts/variables" as *;
+@use "./../abstracts/global" as *;
+@use "./../abstracts/mixins" as *;
+@use "./../abstracts/keyframes" as *;
+
+#About {
+    img {
+        border-radius: 10px;
+        
+    }
+}

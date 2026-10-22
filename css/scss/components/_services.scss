@@ -1,0 +1,36 @@
+@use "./../abstracts/variables" as *;
+@use "./../abstracts/global" as *;
+@use "./../abstracts/mixins" as *;
+@use "./../abstracts/keyframes" as *;
+
+#Services {
+    .box {
+        transition-duration: .5s;
+        padding: 20px 40px;
+        border-radius: 15px;
+        width: 87%;
+        margin: auto;
+        transform: translateY(0px);
+
+        &:hover {
+            background-color: white;
+            box-shadow: 0 20px 50px #00000080;
+            transform: translateY(-5px);
+        }
+
+        img {
+            width: 60px;
+        }
+
+        p {
+            width: 100%;
+            margin: auto;
+
+            a {
+                cursor: pointer;
+            }
+        }
+
+    }
+    
+}

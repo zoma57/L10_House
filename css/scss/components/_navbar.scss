@@ -1,0 +1,97 @@
+@use "./../abstracts/variables" as *;
+@use "./../abstracts/global" as *;
+@use "./../abstracts/mixins" as *;
+@use "./../abstracts/keyframes" as *;
+
+nav.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    transition-duration: .5s;
+
+    .navbar-brand{
+        width: 11%;
+        transition-duration: .5s;
+        @include respond (350) {
+            width: 30%;
+        }
+        @include respond (650) {
+            width: 20%;
+        }
+        @include respond (1050) {
+            width: 10%;
+        }
+    }
+
+    @include respond (350) {
+        .navbar-collapse {
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 15px;
+
+            .nav-item {
+                margin-bottom: 25px;
+            }
+
+            .nav-item:nth-child(1) {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    @include respond (1050) {
+        .navbar-collapse {
+            background-color: transparent;
+
+            .nav-item {
+                margin-bottom: 0;
+            }
+
+            .nav-item:nth-child(1) {
+                margin-top: 0px;
+            }
+        }
+    }
+    
+    .nav-link {
+        color: $firstColor;
+        font-weight: 500;
+        padding: 0;
+        position: relative;
+        display: inline-block;
+
+        &.active  {
+            color: $firstColor;
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &::after {
+            @include createEle($w: 0%, $h: 2px);
+            background-color: $secondColor;
+            transform: translateY(10px) translateX(-50%);
+            transition-duration: .5s;
+            position: absolute;
+            left: 50%;
+            bottom: 0px;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    &.scrolled {
+
+        background-color: rgba(255, 255, 255, 0.9);
+
+        .navbar-brand{
+            width: 8%;
+        }
+    }
+}
