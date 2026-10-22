@@ -1,0 +1,87 @@
+[
+    {
+        "continent": "MIDDLE EASTERN",
+        "languages": [
+            "Arabic",
+            "Farsi",
+            "Kurdish",
+            "Turkish"
+        ]
+    },
+    {
+        "continent": "AFRICAN",
+        "languages": [
+            "Afrikaans",
+            "Akan-Twi",
+            "Amharic",
+            "Bemba",
+            "Chichewa\/Nyanja",
+            "Ewe",
+            "Hausa",
+            "Igbo",
+            "Kinyarwanda",
+            "Kirundi",
+            "Lingala",
+            "Malagasy",
+            "Nigerian Pidgin",
+            "Northern",
+            "Sotho\/Sepedi",
+            "Oromo",
+            "Sesotho\/Southern Sotho",
+            "Setswana",
+            "Shona",
+            "Somali",
+            "Swahili",
+            "Swazi\/Swati",
+            "Tigrinya",
+            "Wolof",
+            "Xhosa",
+            "Yoruba",
+            "Zulu"
+        ]
+    },
+    {
+        "continent": "SOUTH ASIA",
+        "languages": [
+            "Bengali",
+            "Dari",
+            "Gujarati",
+            "Hindi",
+            "Kannada",
+            "Kashmiri",
+            "Malayalam",
+            "Marathi",
+            "Nepali",
+            "Oriya",
+            "Pashto",
+            "Punjabi",
+            "Sinhala",
+            "Tamil",
+            "Telugu",
+            "Urdu"
+        ]
+    },
+    {
+        "continent": "SOUTH EAST ASIA",
+        "languages": [
+            "Burmese",
+            "Hmong",
+            "Indonesian",
+            "Khmer",
+            "Lao",
+            "Malay",
+            "Tagalog",
+            "Thai",
+            "Vietnamese"
+        ]
+    },
+    {
+        "continent": "EAST ASIA",
+        "languages": [
+            "Simplified Chinese",
+            "Traditional Chinese",
+            "Korean",
+            "Japanese"
+        ]
+    }
+]

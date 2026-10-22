@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Agriculture\/Livestock husbandry",
+        "icon": "agri.png"
+    },
+    {
+        "name": "Appliances",
+        "icon": "appls.png"
+    },
+    {
+        "name": "Automotive & Trucks",
+        "icon": "automative.png"
+    },
+    {
+        "name": "Aviation",
+        "icon": "aviation.png"
+    },
+    {
+        "name": "Business & Finance",
+        "icon": "business.png"
+    },
+    {
+        "name": "Consumer Electronics",
+        "icon": "consumer.png"
+    },
+    {
+        "name": "Cosmetics",
+        "icon": "cosmetics.png"
+    },
+    {
+        "name": "Documentary",
+        "icon": "Doc.png"
+    },
+    {
+        "name": "Educational\/E-Learning",
+        "icon": "educational.png"
+    },
+    {
+        "name": "Food and Beverages industries",
+        "icon": "food.png"
+    },
+    {
+        "name": "Games",
+        "icon": "gms.png"
+    },
+    {
+        "name": "IT\/Software",
+        "icon": "it.png"
+    },
+    {
+        "name": "Legal\/Law",
+        "icon": "legal.png"
+    },
+    {
+        "name": "Life Science",
+        "icon": "lifesie.png"
+    },
+    {
+        "name": "Marketing\/Advertising",
+        "icon": "marketing.png"
+    },
+    {
+        "name": "Medical",
+        "icon": "medical.png"
+    },
+    {
+        "name": "Oil & Gas",
+        "icon": "oilandgas.png"
+    },
+    {
+        "name": "Patents",
+        "icon": "Pat.png"
+    },
+    {
+        "name": "Pharmaceutical",
+        "icon": "pharmaceutical.png"
+    },
+    {
+        "name": "Retail",
+        "icon": "retail.png"
+    },
+    {
+        "name": "Sport",
+        "icon": "sport.png"
+    },
+    {
+        "name": "Technical\/Technical Documentation",
+        "icon": "technical.png"
+    },
+    {
+        "name": "Telecommunication",
+        "icon": "telecommunication.png"
+    },
+    {
+        "name": "Tourism\/Travel",
+        "icon": "tourism.png"
+    }
+]

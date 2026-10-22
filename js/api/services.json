@@ -1,0 +1,104 @@
+[
+    {
+        "icon": "s1.png",
+        "img": "trans.jpg",
+        "title": "Translation and Localization",
+        "description": "Whether you need a single page document translated or an entire localization project managed,  L10N House has the tools and expertise to make it happen. Our team provides a fast and efficient service across  a range of sectors using state-of-the-art technology. Our accurate texts fit seamlessly into their target markets.  L10N House is more than a basic word-for-word translation service (Although we provide that service if that is what  you need). Each project is tailored to the local culture and phrasing, so your target audience can instantly  grasp the intended meaning. This is known as localization. Choosing the target language for translation is  just the first step. Our specialty is ensuring the right ‘frequency’ to reach your target audience. L10N House  employs a pool of specialized translators from a wide variety of industry backgrounds to help you achieve just that.",
+        "sections": [
+            {
+                "title": "The translation process: attention to detail every step of the way",
+                "points": [
+                    "Analyze the scope and requirements of the project.",
+                    "Confirm which linguist best meets the project requirements.",
+                    "Deliver a proposal that meets the client’s budget.",
+                    "Client approval of the proposal.",
+                    "Process the files for translation, gather any necessary information, and collate a glossary of specialized terms for client approval.",
+                    "The completed translation then goes through a process of correction and editing to ensure the final text has the authentic flow, rhythm, and character of the target language.",
+                    "After the revision and editing phase, we perform a quality assurance (QA) check using advanced QA tools such as ApSIC Xbench to check for any potential errors and ensure the translation is polished and ready for delivery to the client.",
+                    "Prepare the files for final delivery.",
+                    "Submit deliverables to the client.",
+                    "Project feedback from the client."
+                ]
+            },
+            {
+                "title": "QA Procedures:",
+                "points": [
+                    "Pre-production support",
+                    "Localization vendor selection",
+                    "Language QA spot checks on all deliverables",
+                    "Linguistic QA on builds",
+                    "Query handling",
+                    "Terminology management",
+                    "Vendor performance assessment"
+                ]
+            }
+        ]
+    },
+    {
+        "icon": "s2.png",
+        "img": "dtp.jpg",
+        "title": "Desktop Publishing",
+        "description": "L10N House offers DTP, design, and typesetting services for all translation and  localization projects. Solid typography with a modern, flawless layout ensures your material will  be a joy to explore! These two elements work together to deliver the best possible readability.  We create your electronic files in the target language of your choice while maintaining the meaning,  style, and tone of the original document. In addition to good planning, the outsourcing of product  information production requires the prior and precise definition.",
+        "sections": [
+            {
+                "title": "The DTP process:",
+                "points": [
+                    "Determine the scope of the project, the required software, and the target language characteristics to see if this is supported by the software. We are then able to evaluate the layout complexity.",
+                    "Assign the project to a desktop publisher proficient in the required software.",
+                    "Once the actual DTP work is completed, the project goes through the quality control (QC) process and linguistic proofreading.",
+                    "After the QC and proofreading phases, the project goes through further correction to check for any potential errors and ensure the data is polished and ready to go!"
+                ]
+            },
+            {
+                "title": "QA Procedures:",
+                "points": [
+                    "Pre-production support",
+                    "DTP resources selection",
+                    "DTP QC on all deliverables",
+                    "Linguist proofreading",
+                    "Corrections according to QC and proofreading comments",
+                    "Second round of checks",
+                    "Final delivery",
+                    "Vendor performance assessment"
+                ]
+            }
+        ]
+    },
+    {
+        "icon": "s3.png",
+        "img": "eng.jpg",
+        "title": "Localization Engineering",
+        "description": "L10N House is a one-stop-shop for all your translation, editing, engineering, and  testing needs. Our highly qualified engineers are equipped with the skills and knowledge to meet  all your conversion, software localization, website localization, and graphic editing requirements.  We are able to manage any kind of environment and all programming languages, with the necessary  tools to ensure a simple and streamlined process.",
+        "sections": [
+            {
+                "title": "Our engineering services are tailored to your specific needs and include:",
+                "points": [
+                    "Conversions",
+                    "Software localization",
+                    "E-Learning localization",
+                    "Flash engineering",
+                    "Help engineering",
+                    "Graphics editing"
+                ]
+            }
+        ]
+    },
+    {
+        "icon": "s4.png",
+        "img": "vo.jpg",
+        "title": "Voice Over and Dubbing",
+        "description": "Whether it’s a documentary, educational video, television commercial, in-store  announcement, or menu options for a phone system, L10N House offers a fast and easy way to get  your voice work and dubbing projects completed on time and within budget. We are always happy  to recommend suitable voices and provide an obligation-free quote for your upcoming production.  Our team can coordinate your voice-over production from beginning to end, answer your technical  questions, and ensure all your requirements are met and delivered within your deadline. Our  engineers will ensure your project is recorded and mixed to the highest standard and provide  bespoke music tracks upon request.",
+        "sections": [
+            {
+                "title": "Voice over services:",
+                "points": [
+                    "Full audio production and ongoing project management support",
+                    "Time syncing",
+                    "Lip syncing",
+                    "Mixing and editing",
+                    "Voiceover narration"
+                ]
+            }
+        ]
+    }
+]
