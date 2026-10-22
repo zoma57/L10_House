@@ -91,7 +91,7 @@ section:not(#Language_Sectors):hover .whiteTitle::after {
 }
 
 .video {
-  background-image: url("../../../images/video-bg.jpg");
+  background-image: url("../images/video-bg.jpg");
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -308,6 +308,26 @@ footer p {
 }
 #Top:hover {
   transform: translateX(-52px);
+}
+
+.loadingScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ada996;
+  background: -webkit-linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  z-index: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.loadingScreen .box {
+  width: 200px;
+  height: 200px;
 }
 
 @keyframes animate1 {
@@ -659,7 +679,7 @@ nav.navbar.scrolled .navbar-brand {
 #Why_Us .item .box {
   width: 100%;
   height: 100%;
-  background-image: url("../../../images/best.jpg");
+  background-image: url("../images/best.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -691,12 +711,12 @@ nav.navbar.scrolled .navbar-brand {
   color: white;
 }
 #Why_Us .item .box2 {
-  background-image: url("../../../images/solutions.jpg");
+  background-image: url("../images/solutions.jpg");
   background-position: center;
   background-size: cover;
 }
 #Why_Us .item .box3 {
-  background-image: url("../../../images/teamwork.jpg");
+  background-image: url("../images/teamwork.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -708,7 +728,7 @@ nav.navbar.scrolled .navbar-brand {
   width: 100%;
 }
 #Language_Sectors .part1 {
-  background-image: url("./../../../images/youth.jpg");
+  background-image: url("../images/youth.jpg");
   height: 300px;
   background-size: cover;
   background-attachment: fixed;
@@ -831,7 +851,7 @@ nav.navbar.scrolled .navbar-brand {
 }
 
 #Contact_Us {
-  background-image: url("../../../images/contact-bg.png");
+  background-image: url("../images/contact-bg.png");
   background-size: cover;
   background-position: center;
   position: relative;
