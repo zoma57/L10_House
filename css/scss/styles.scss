@@ -1,0 +1,12 @@
+@use "./abstracts/variables";
+@use "./abstracts/global";
+@use "./abstracts/mixins";
+@use "./abstracts/keyframes";
+
+@use "./components/navbar";
+@use "./components/home";
+@use "./components/about";
+@use "./components/services";
+@use "./components/whyus";
+@use "./components/language_sectors";
+@use "./components/contact_us";
