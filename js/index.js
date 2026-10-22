@@ -103,6 +103,11 @@ $(window).scroll(function() {
     }
 });
 
+$(window).on("load", function () {
+    $(".loadingScreen").fadeOut(1000);
+    $("body").css("overflow-y", "auto");
+});
+
 new WOW({
     animateClass: 'animate__animated',
 }).init();
